@@ -1,14 +1,13 @@
 * {
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*background-color: #24252A;*/
 }
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #333;
+  background-color: #24252A;
   color: #fff;
   font-size: 1.1em;
   line-height: 1.5;
@@ -24,6 +23,7 @@ li, a, button {
 }
 
 header {
+  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +39,7 @@ header {
 
 #showcase .bg-image {
   position: absolute;
-  background: url("../images/blabla.jpg");
+  background: url("../images/uat-campus.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,6 +68,8 @@ p {
   margin: 0;
   padding: 1em 0;
 }
+
+
 
 .logo {
   cursor: pointer;
@@ -103,6 +105,21 @@ button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: .5em 0;
+}
+
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
 /*.grid-container{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -126,6 +143,7 @@ button:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 #section-b li {
@@ -138,10 +156,16 @@ button:hover {
   padding: 1.5em;
 }
 
+.card img {
+  height: 300px;
+  max-width: 100%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
+  justify-content: space-between;
 }
 
 .card p {
