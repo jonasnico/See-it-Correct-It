@@ -56,7 +56,8 @@ header {
 
 #showcase .content-wrap,
 #section-a .content-wrap {
-  padding: 0 1.5em;
+  padding: 0 1em;
+  float: left;
 }
 
 h1, h2, h3 {
@@ -69,8 +70,6 @@ p {
   padding: 1em 0;
 }
 
-
-
 .logo {
   cursor: pointer;
 }
@@ -81,7 +80,7 @@ p {
 
 .nav_links li {
   display: inline-block;
-  padding: 0px 20px
+  padding: 0px 15px
 }
 
 .nav_links li a {
@@ -93,7 +92,7 @@ p {
 }
 
 button {
-  padding: 9px 25px;
+  padding: 9px 30px;
   background-color: rgba(0, 136, 169, 1);
   border: none;
   border-radius: 50px;
@@ -153,7 +152,7 @@ button:hover {
 }
 
 .card-content {
-  padding: 1.5em;
+  padding: 1em;
 }
 
 .card img {
@@ -168,6 +167,18 @@ button:hover {
   justify-content: space-between;
 }
 
+.card-title{
+  text-decoration: underline;
+}
+
 .card p {
-  color: red;
+  color: black;
+}
+
+.contact{
+  float: left;
+}
+
+footer{
+  text-align: center;
 }
