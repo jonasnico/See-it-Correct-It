@@ -1,8 +1,8 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252A;
+  /*box-sizing: border-box;*/
+  margin: 0;
+  padding: 0;
+  /*background-color: #24252A;*/
 }
 
 body {
@@ -24,12 +24,40 @@ li, a, button {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
 }
 
+/* Header Showcase */
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: url("../images/blabla.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
 
 h1, h2, h3 {
   margin: 0;
@@ -42,7 +70,7 @@ p {
 }
 
 .logo {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav_links {
@@ -50,8 +78,8 @@ p {
 }
 
 .nav_links li {
-    display: inline-block;
-    padding: 0px 20px
+  display: inline-block;
+  padding: 0px 20px
 }
 
 .nav_links li a {
@@ -59,25 +87,63 @@ p {
 }
 
 .nav_links li a:hover {
-    color: #0088a9
+  color: #0088a9
 }
 
 button {
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
+  background-color: rgba(0, 136, 169, 0.8);
 }
 
-.grid-container{
+/*.grid-container{
   display: grid;
-  grid-gap: 50px 100px;
   grid-template-columns: auto auto auto;
-  justify-content: space-around;
+  padding: 10px;
+  background-color: #dddd;
+}
+
+.grid-item{
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0,8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}*/
+/* Section B */
+#section-b {
+  padding: 2em 1em 1em;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.card p {
+  color: red;
 }
