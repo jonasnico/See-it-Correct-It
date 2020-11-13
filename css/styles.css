@@ -22,8 +22,9 @@ li, a, button {
   text-decoration: none;
 }
 
+
 header {
-  background-color: #000;
+  background-color: #aeaeae;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +35,6 @@ header {
 #showcase {
   min-height: 450px;
   color: #fff;
-  text-align: center;
 }
 
 #showcase .bg-image {
@@ -57,7 +57,6 @@ header {
 #showcase .content-wrap,
 #section-a .content-wrap {
   padding: 0 1em;
-  float: left;
 }
 
 h1, h2, h3 {
@@ -119,23 +118,24 @@ button:hover {
   color: #333;
 }
 
-/*.grid-container{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  background-color: #dddd;
+/* Section A */
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
 }
 
-.grid-item{
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0,8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}*/
+#section-a-right {
+  background: #aeaeae;
+}
+
 /* Section B */
 #section-b {
-  padding: 2em 1em 1em;
+  padding: 1em 8em 4em;
+}
+
+#section-b-top {
+  background: #eaeaea;
 }
 
 #section-b ul {
@@ -163,9 +163,9 @@ button:hover {
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 
 .card-title{
   text-decoration: underline;
