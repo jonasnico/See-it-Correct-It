@@ -120,13 +120,35 @@ button:hover {
 
 /* Section A */
 #section-a {
-  background: #eaeaea;
+  background: #eaea00;
   color: #333;
   padding-bottom: 2em;
 }
 
+.info-text{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1em;
+  padding: 1em;
+  margin-right: 1em;
+}
+
+.info-txt h2, h3, p{
+  padding: 0;
+}
+
+#section-a .content-wrap{
+  text-align: center;
+  padding: 15px;
+}
+
 #section-a-right {
   background: #aeaeae;
+}
+
+#section-a-right .content-wrap{
+  text-align: center;
+  padding: 15px;
 }
 
 /* Section B */
@@ -162,10 +184,10 @@ button:hover {
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
 }
-
 
 .card-title{
   text-decoration: underline;
