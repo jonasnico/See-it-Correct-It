@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Georgia, Arial, sans-serif;
   background-color: #24252A;
   color: #fff;
   font-size: 1.1em;
@@ -15,14 +15,14 @@ body {
 }
 
 li, a, button {
-  font-family: "Montserrat", sans-serif;
+  font-family: Garamond, sans-serif;
   font-weight: 500;
   font-size: 25px;
   color: #000;
   text-decoration: none;
 }
 
-.content-title{
+.content-title {
   text-decoration: underline;
 }
 
@@ -50,7 +50,6 @@ header {
   height: 450px;
   z-index: -1;
   opacity: 0.4;
-  border-top: 1em solid #24252A;
 }
 
 #showcase h1 {
@@ -80,10 +79,6 @@ p {
   padding: 1em 0;
 }
 
-.logo {
-  cursor: pointer;
-}
-
 .nav_links {
   list-style: none;
 }
@@ -103,7 +98,7 @@ p {
 
 button {
   padding: 9px 30px;
-  background-color: #eaea00;
+  background-color: #fedc56;
   color: #000;
   border: none;
   border-radius: 50px;
@@ -117,7 +112,7 @@ button:hover {
 
 .btn {
   display: inline-block;
-  background: #eaea00;
+  background: #fedc56;
   color: #000;
   text-decoration: none;
   padding: 9px 30px;
@@ -132,12 +127,12 @@ button:hover {
 
 /* Section A */
 #section-a {
-  background: #eaea00;
+  background: #fedc56;
   color: #000;
   padding-bottom: 1em;
 }
 
-.info-text{
+.info-text {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 1em;
@@ -146,23 +141,31 @@ button:hover {
   /* grid-auto-columns: minmax(100px, auto); (Burde fikse "Announcement kommer utenfor boksen"-problemet)*/
 }
 
-.info-text h2, h3, p{
+.info-text h2, h3, p {
   padding: 0;
 }
 
-#section-a .content-wrap{
+#section-a .content-wrap {
   text-align: center;
   padding: 15px;
 }
 
 #section-a-right {
-  background: #eaea00;
+  background: #fedc56;
   color: #000;
 }
 
-#section-a-right .content-wrap{
+#section-a-right .content-wrap {
   text-align: center;
   padding: 15px;
+}
+
+#section-a-right a:hover{
+  text-decoration: underline;
+}
+
+#section-a a:hover{
+  text-decoration: underline;
 }
 
 /* Section B */
@@ -172,16 +175,16 @@ button:hover {
 
 #section-b-top {
   background: #0b1338;
-  color: #eaea00;
+  color: #e3e0da;
 }
 
-#section-b-top h1{
+#section-b-top h1 {
   font-size: 3em;
   padding: 5px;
 }
 
-#section-b-top h2{
-  font-size: 3em;
+#section-b-top h2 {
+  font-size: 2em;
   padding: 5px;
 }
 
@@ -193,7 +196,7 @@ button:hover {
 
 #section-b li {
   margin-bottom: 1em;
-  background: #eaea00;
+  background: #edebe8;
   color: #000;
 }
 
@@ -205,12 +208,16 @@ button:hover {
   padding: 1em;
 }
 
+#section-b a:hover {
+  text-decoration: underline;
+}
+
 .card img {
   padding: 1em;
   /* height: 300px; */
   max-width: 100%;
   width: 100%;
-/*  height: 80%; */
+  /*  height: 80%; */
 }
 
 .grid {
@@ -220,7 +227,7 @@ button:hover {
   grid-auto-rows: minmax(100px, auto);
 }
 
-.card-title{
+.card-title {
   text-decoration: underline;
 }
 
@@ -228,39 +235,44 @@ button:hover {
   color: black;
 }
 
-#section-c{
+#section-c {
   background: #0b1338;
-  color: #eaea00;
+  color: #fedc56;
   padding: 1em;
   border-bottom: 1em solid #24252A;
 }
 
-.contact{
-  background: #0b1338;
-  color: #eaea00;
+.contact {
+  background: #edebe8;
+  color: #000;
   text-align: left;
   padding: 25px;
   padding-left: 40px;
-  border-bottom: 1em solid #24252A;
 }
 
-.contact h3{
+.contact h3 {
   font-size: 1.5em;
   text-decoration: underline;
 }
 
-.contact p{
+.contact p {
   font-size: 1.2em;
 }
 
-span{
+span {
   text-decoration: underline;
 }
 
-footer{
-  text-align: center;
-  background: #000;
-  padding: 1em;
+footer {
+  text-align: left;
+  background: #edebe8;
+  color: #000;
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+
+#contact-us .logo {
+  float: right;
 }
 
 @media(max-width: 1045px) {
@@ -270,20 +282,20 @@ footer{
     grid-gap: 1em;
     grid-auto-rows: minmax(100px, auto);*/
   }
-  #section-b .card img{
+
+  #section-b .card img {
     position: static;
   }
 
-  #showcase h1{
+  #showcase h1 {
     font-size: 2em;
   }
 
-  #showcase p{
+  #showcase p {
     font-size: 3em;
   }
 
-  header{
-  }
+  header {}
 }
 
 @media(max-width: 732px) {
@@ -293,27 +305,32 @@ footer{
     margin: 0;
     width: 20%;
   }
+
   .logo {
     max-width: 120px;
   }
+
   .nav_links li {
     display: inline-block;
     padding: 0px 3px
   }
-  #section-b .card img{
+
+  #section-b .card img {
     position: static;
   }
-  .contact h3{
+
+  .contact h3 {
     font-size: 1em;
     text-decoration: underline;
   }
-  .contact p{
+
+  .contact p {
     font-size: 1em;
   }
+
   .card img {
     padding: 1em;
     height: auto;
     max-width: 100%;
   }
-
 }
