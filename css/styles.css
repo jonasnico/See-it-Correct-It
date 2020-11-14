@@ -271,9 +271,7 @@ footer {
   padding-bottom: 25px;
 }
 
-#contact-us .logo {
-  float: right;
-}
+
 
 @media(max-width: 1045px) {
   .grid {
@@ -294,8 +292,6 @@ footer {
   #showcase p {
     font-size: 3em;
   }
-
-  header {}
 }
 
 @media(max-width: 732px) {
