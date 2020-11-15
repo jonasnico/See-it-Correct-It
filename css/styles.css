@@ -271,8 +271,6 @@ footer {
   padding-bottom: 25px;
 }
 
-
-
 @media(max-width: 1045px) {
   .grid {
     display: inline-block;
